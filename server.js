@@ -40,7 +40,7 @@ ptTransport.on('connect', message => logger && logger.info(message));
 
 const app = express();
 
-app.set('port', process.env.PORT || 5000);
+app.set('port', process.env.PORT || 3002);
 app.use(express.static(`${__dirname}/public`));
 
 app.get('/', (request, response) => {
